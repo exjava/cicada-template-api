@@ -1,4 +1,4 @@
-# cicada-api-demo
+# cicada-template-api
 
 ## 使用方法
 ### 1.创建github访问令牌
