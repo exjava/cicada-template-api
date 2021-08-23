@@ -33,7 +33,7 @@ lombok
 https://projectlombok.org/setup/eclipse
 ### 6.clone工程到本地
 ```
-git clone git clone https://github.com/exjava/cicada-template-api.git
+git clone https://github.com/exjava/cicada-template-api.git
 ```
 ### 7.创建eclipse工程
 ```
