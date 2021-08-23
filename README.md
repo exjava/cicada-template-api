@@ -47,7 +47,7 @@ cd cicada-template-api
 ### 9.创建database
 ```
 mysql -uroot -pXXXXX
-\. cicada-api-demo\database\database.sql
+\. cicada-template-api\database\database.sql
 ```
 ### 10.eclipse启动服务
 在com.company.project.DemoApplication.java上点右键 -> Run As -> Java Application
