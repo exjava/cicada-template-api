@@ -1,0 +1,23 @@
+### Build Tool ###
+.gradle/
+build
+
+### IDE/Editor ###
+.classpath
+.project
+.settings/
+bin/
+classes/
+.logs/
+logs/
+
+### Backup Files ###
+*.bk
+*.bak
+*.old
+
+### OS File ###
+.DS_Store
+Thumbs.db
+*.swp
+*.dump

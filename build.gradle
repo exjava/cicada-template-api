@@ -1,0 +1,50 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'eclipse'
+}
+
+group = 'com.company.project'
+version = '1.0.0'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+    maven {
+        url 'https://maven.pkg.github.com/exjava/mvn-repo'
+        credentials {
+            username githubUsername
+            password githubToken
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'com.mds.cicada:cicada-core:1.0.1'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'com.baomidou:mybatis-plus-boot-starter:3.4.3'
+	implementation 'com.baomidou:mybatis-plus-generator:3.4.1'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'com.alibaba:druid-spring-boot-starter:1.2.5'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+	implementation 'org.freemarker:freemarker:2.3.31'
+	
+	runtimeOnly 'mysql:mysql-connector-java'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+	
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+test {
+	useJUnitPlatform()
+}
